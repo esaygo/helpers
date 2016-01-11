@@ -1,0 +1,25 @@
+<script>
+//Create an array of 30 numbers randomly chosen between 1 and 1000
+
+var randomArray = [];
+
+for (var i = 0; i < 30; i++) {
+  randomArray[i] = (Math.floor(Math.random() * (i+970) +1));
+}
+var print = randomArray;
+
+
+
+// Display the array in the format no1|no2
+
+for (var i = 0; i < randomArray.length; i++) {
+  var sortArray = randomArray.sort();
+  if (i < (randomArray.length - 1)) {
+  document.write(sortArray[i] + '|');
+  }
+  // else {document.write(randomArray[randomArray.length-1])
+  // }
+ }
+ document.write(randomArray[randomArray.length-1]);
+
+</script>
